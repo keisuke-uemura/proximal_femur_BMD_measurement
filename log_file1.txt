@@ -1,0 +1,4 @@
+RegTools - GPU-accelerated Registration Toolkit. Compiled at Feb 15 2021, 15:13:21
+RegTools - initializing 1 devices ( 0 )
+RegTools - Using device 0: GeForce RTX 2080 Ti, Global memory: 11264.00 MB (10078.55 available), compute capability: 7.5, UVA: 1, -68 CUDA cores, 100.0 percent load
+CUBLAS initialization successful

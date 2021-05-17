@@ -1,0 +1,8 @@
+{
+    "side":"L", 
+    "slope":0.8, 
+    "intercept":0.5, 
+    "fcsvfile":"sample.fcsv", 
+    "img_filename":"image.mhd", 
+    "label_filename":"label.mhd"
+}
