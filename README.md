@@ -8,11 +8,11 @@ The codes in this repository are used to quantify the 2D & 3D bone density of th
 - MATLAB 
 
 ## Pre-processing
-- Bilateral femur segmentation (segmented by the model in https://github.com/keisuke-uemura. Model will be uploaded after the journal paper is accepted)
-- If BMD conversion is needed, segmented calibration phantom (segmented by models in https://github.com/keisuke-uemura/CT-Intensity-Calibration-Phantom-Segmentation)
+- Bilateral femur segmentation (Segmented by the model in https://github.com/keisuke-uemura. Model will be uploaded after the journal paper is accepted)
+- Calibration phantom segmentation (If BMD conversion is needed. Segmented by models in [Phantom-segmentation](https://github.com/keisuke-uemura/CT-Intensity-Calibration-Phantom-Segmentation)
 
 ## Required input information for each case (saved in json file)
-Sample of json file can be found at [sample_setup.json] (https://github.com/keisuke-uemura/proximal_femur_BMD_measurement/tree/master/sample/sample_setup.json)
+For a sample of json file, please see [sample_setup.json](/sample/sample_setup.json)
 - CT images (saved as .mhd)
 - Segmented label (from U-net, saved as .mhd) 
 - Eight landmarks (from 3D slicer, saved as .fcsv)<dt>Head neck junction (superior, inferior, anterior, posterior)</dt> Shaft (2cm distal from the lesser trochanter, 5cm distal from the lesser trochanter)</dt>  <dt>Head center</dt> <dt>Neck center 
