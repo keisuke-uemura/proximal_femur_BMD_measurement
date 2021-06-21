@@ -28,7 +28,7 @@ myu_img_cropped = myu_img (min(x_prox_Edge)-10:max(x_prox_Edge)+10,:,two_cm_dist
     
 %crete volume image for the 2cm distal landmark. Set landmark location as 1
 two_cm_distal=zeros(size(myu_img_cropped));
-two_cm_distal(two_cm_distal_voxel(1)-min(x_prox_Edge)+1,two_cm_distal_voxel(2),20+1) = 1 ;
+two_cm_distal(two_cm_distal_voxel(1)-min(x_prox_Edge)+10+1,two_cm_distal_voxel(2),20+1) = 1 ;
 
 two_cm_distal=single(two_cm_distal);
     
