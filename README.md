@@ -26,7 +26,7 @@ For a sample of json file, please see [sample_setup.json](/sample/sample_setup.j
 ```bash
 Two_dimensional_pipeline.m
 ```
-- Required functions <dt> mhdread.m</dt><dt>RegTools (will be uploaded after the journal paper is accepted)</dt>
+- Required functions <dt> mhdread.m</dt><dt>RegTools (can be downloaded from https://github.com/YoshitoOtake/RegTools)</dt>
   <dt>import_data.m</dt>
   <dt>isolate_bone_of_interest.m</dt>
   <dt>calculate_rotation_angles.m</dt>
