@@ -2,8 +2,8 @@ function [DRR_IMG, two_cm_distal_DRR_IMG, Neck_superior_DRR_IMG, Neck_inferior_D
 % This function converts HU to BMD using a regression model (if necessary), and generates DRR using Regtools
 
 %% Required functions (Regtools)
-addpath('.\function\RegTools_build_VS2019');
-addpath('.\function\RegTools_build_VS2019\Matlab');
+
+% Add path to the Regtools (available from https://github.com/YoshitoOtake/RegTools))
 
 %% Converting HU to BMD using a calibration phantom (when necessary)
 
@@ -12,7 +12,7 @@ addpath('.\function\RegTools_build_VS2019\Matlab');
  else 
     myu_img =  img;% if not using the phantom
  end
-myu_img(~(femur_of_interest==1)) = 0;
+myu_img(~(femur_of_interest==2)) = 0;
 
 %% Crop CTimage (roughly) to set up the camera position at the middle of the image
 
@@ -38,10 +38,10 @@ Neck_inferior=zeros(size(myu_img_cropped)); % for inferior head-neck junction
 Neck_anterior=zeros(size(myu_img_cropped)); % for anterior head-neck junction
 Neck_posterior=zeros(size(myu_img_cropped)); % for posterior head-neck junction
        
-Neck_superior(Neck_landmarks_voxel(1,1)-min(x_prox_Edge)+1,Neck_landmarks_voxel(1,2),Neck_landmarks_voxel(1,3)-two_cm_distal_voxel(3)+20+1) = 1 ;
-Neck_inferior(Neck_landmarks_voxel(2,1)-min(x_prox_Edge)+1,Neck_landmarks_voxel(2,2),Neck_landmarks_voxel(2,3)-two_cm_distal_voxel(3)+20+1) = 1 ;
-Neck_anterior(Neck_landmarks_voxel(3,1)-min(x_prox_Edge)+1,Neck_landmarks_voxel(3,2),Neck_landmarks_voxel(3,3)-two_cm_distal_voxel(3)+20+1) = 1 ;
-Neck_posterior(Neck_landmarks_voxel(4,1)-min(x_prox_Edge)+1,Neck_landmarks_voxel(4,2),Neck_landmarks_voxel(4,3)-two_cm_distal_voxel(3)+20+1) = 1 ;
+Neck_superior(Neck_landmarks_voxel(1,1)-min(x_prox_Edge)+10+1,Neck_landmarks_voxel(1,2),Neck_landmarks_voxel(1,3)-two_cm_distal_voxel(3)+20+1) = 1 ;
+Neck_inferior(Neck_landmarks_voxel(2,1)-min(x_prox_Edge)+10+1,Neck_landmarks_voxel(2,2),Neck_landmarks_voxel(2,3)-two_cm_distal_voxel(3)+20+1) = 1 ;
+Neck_anterior(Neck_landmarks_voxel(3,1)-min(x_prox_Edge)+10+1,Neck_landmarks_voxel(3,2),Neck_landmarks_voxel(3,3)-two_cm_distal_voxel(3)+20+1) = 1 ;
+Neck_posterior(Neck_landmarks_voxel(4,1)-min(x_prox_Edge)+10+1,Neck_landmarks_voxel(4,2),Neck_landmarks_voxel(4,3)-two_cm_distal_voxel(3)+20+1) = 1 ;
 
 Neck_superior=single(Neck_superior);
 Neck_inferior=single(Neck_inferior);

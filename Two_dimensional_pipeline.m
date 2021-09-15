@@ -3,7 +3,7 @@
 % if converting the HU into BMD using a calibration phantom, change lines 21-22
 
 % Necessary imput
-  % refer to an example (K4934_setup.json)
+  % refer to an example (sample_setup.json)
 % Necessary functions
   % mhdread.m
   % LoadSlicerFiducialFile.m
@@ -13,7 +13,7 @@
   % calculate_rotation_angles.m
   % generate_proximal_femur_DRR.m
   % select_DXA_region_DRR_label.m
-  % calculate_voxel_density.m
+  % calculate_pixel_density.m
 % Output: Mean_pixel_density 
 
 
@@ -22,8 +22,8 @@
 conversion='N';%if not converting HU
 
 %% Analysis
-input_json_filename = '.\sample\K4934_setup.json';
-% input_json_filename = '.\sample\K5047_setup.json';
+
+input_json_filename = '.\sample\sample_setup.json'; %importing sample data
 
 % import parameters
 [img, hdr, bilateral_femur_label, Neck_landmarks_voxel, head_center, neck_center, two_cm_distal_center, five_cm_distal_center,side, slope, intercept] = import_data(input_json_filename);
