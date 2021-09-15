@@ -1,6 +1,7 @@
 # **Calculation of proximal femur bone density**
 
 The codes in this repository are used to quantify the 2D & 3D bone density of the proximal femur from CT images.
+2D bone density of the neck region can also be measured. 
 
 <img src='fig/Flowchart.PNG' width='1000px'>
 
