@@ -35,6 +35,18 @@ Two_dimensional_pipeline.m
   <dt>select_DXA_region_DRR_label.m</dt>
   <dt>calculate_pixel_density.m</dt>
 
+### 2D analysis (CT-aHU(neck) and CT-aBMD(neck))
+
+```bash
+Two_dimensional_pipeline_neck.m
+```
+- Required functions <dt> mhdread.m</dt><dt>RegTools (can be downloaded from https://github.com/YoshitoOtake/RegTools)</dt>
+  <dt>import_data.m</dt>
+  <dt>isolate_bone_of_interest.m</dt>
+  <dt>calculate_rotation_angles.m</dt>
+  <dt>generate_proximal_femur_DRR.m</dt>
+  <dt>select_neck_region_DRR_label.m</dt>
+  <dt>calculate_pixel_density.m</dt>
 
 
 ### 3D analysis (CT-vHU and CT-vBMD)
