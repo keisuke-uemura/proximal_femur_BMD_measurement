@@ -1,7 +1,6 @@
 function [cropped_DRR_IMG] = select_DXA_region_DRR_label(DRR_IMG, two_cm_distal_DRR_IMG, Neck_superior_DRR_IMG, Neck_inferior_DRR_IMG, Neck_anterior_DRR_IMG, Neck_posterior_DRR_IMG)
 % This function crops the DRR using the projected landmarks and quantifies the mean HU (or BMD) of the proximal femur 
-% output: Mean_pixel_density
-% visualizes proximal femur DRR
+% output: cropped_DRR_IMG
 
 %% Crop DRR using the projected neck landmarks
 
