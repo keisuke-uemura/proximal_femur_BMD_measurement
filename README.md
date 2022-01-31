@@ -9,7 +9,7 @@ The codes in this repository are used to quantify the 2D & 3D bone density of th
 - MATLAB 
 
 ## Pre-processing
-- Bilateral femur segmentation (Segmented by the model in [Femur_segmentation](https://github.com/keisuke-uemura/Femur_segmentation)
+- Bilateral femur segmentation (Segmented by the model in [Femur_segmentation](https://github.com/keisuke-uemura/Femur_segmentation))
 - Calibration phantom segmentation (If BMD conversion is needed. Segmented by models in [Phantom-segmentation](https://github.com/keisuke-uemura/CT-Intensity-Calibration-Phantom-Segmentation)
 
 ## Required input information for each case (saved in json file)
