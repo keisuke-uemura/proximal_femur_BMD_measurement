@@ -3,7 +3,7 @@
 % if converting the HU into BMD using a calibration phantom, change lines 17-18
 
 % Necessary imput
-  % refer to an example (K4934_setup.json)
+  % refer to an example (setup.json)
 % Necessary functions
   % mhdread.m
   % LoadSlicerFiducialFile.m
@@ -18,8 +18,7 @@ conversion='Y';%if converting HU to BMD
 % conversion='N';%if not converting HU
 
 %% Analysis
-% input_json_filename = '.\sample\K4934_setup.json';
-input_json_filename = '.\sample\K5047_setup.json';
+input_json_filename = '.\sample\setup.json';
 
 % import parameters
 [img, hdr, bilateral_femur_label, Neck_landmarks_voxel, head_center, neck_center, two_cm_distal_center, five_cm_distal_center,side, slope, intercept] = import_data(input_json_filename);
