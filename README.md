@@ -20,6 +20,9 @@ For a sample of json file, please see [sample_setup.json](/sample/sample_setup.j
 - Side of interest ('L' or 'R')
 - Slope and intercept of the regression model (if BMD conversion is necessary. If conversion is not needed, put 0 for both parameters)
 
+## For full-automated measurement
+- Landmarks of the proximal femur selected by an AI trained model (XXXXXXXX) 
+
 ## Usage
 
 ### 2D analysis (CT-aHU and CT-aBMD)
