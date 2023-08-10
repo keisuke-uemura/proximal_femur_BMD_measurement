@@ -21,7 +21,7 @@ For a sample of json file, please see [sample_setup.json](/sample/sample_setup.j
 - Slope and intercept of the regression model (if BMD conversion is necessary. If conversion is not needed, put 0 for both parameters)
 
 ## For full-automated measurement
-- Landmarks of the proximal femur selected by an AI trained model (XXXXXXXX) 
+- Landmarks of the proximal femur selected by an AI trained model (https://github.com/NAIST-ICB/LandmarkDetection) 
 
 ## Usage
 
